@@ -1,9 +1,11 @@
-import InterceptionLeaders from "~/components/interceptionLeaders";
-import PassingLeaders from "~/components/passingLeaders";
-import ReceivingLeaders from "~/components/receivingLeaders";
-import RushingLeaders from "~/components/rushingLeaders";
-import SackLeaders from "~/components/sackLeaders";
-import TackleLeaders from "~/components/tackleLeaders";
+import InterceptionLeaders from "~/components/playerLeaders/interceptionLeaders";
+import PassingLeaders from "~/components/playerLeaders/passingLeaders";
+import ReceivingLeaders from "~/components/playerLeaders/receivingLeaders";
+import RushingLeaders from "~/components/playerLeaders/rushingLeaders";
+import SackLeaders from "~/components/playerLeaders/sackLeaders";
+import SeasonSelectBox from "~/components/seasonSelectBox";
+import StatTypeSelect from "~/components/statTypeSelect";
+import TackleLeaders from "~/components/playerLeaders/tackleLeaders";
 import TeamStatSelect from "~/components/teamStatSelect";
 
 export default function Index() {
@@ -14,8 +16,14 @@ export default function Index() {
 					<h2>NH Stat Leaders 2022</h2>
 					<TeamStatSelect></TeamStatSelect>
 				</div>
+				<div>
+					<StatTypeSelect></StatTypeSelect>
+				</div>
+				<div className="flex">
+					<SeasonSelectBox></SeasonSelectBox>
+				</div>
 			</header>
-			<div className="flex flex-col lg:flex-row gap-4">
+			<section className="flex flex-col lg:flex-row gap-4">
 				<section id="offensive_leaders" className="flex flex-col gap-4 flex-1">
 					<div className="mb-4">
 						<h3>Offensive Leaders</h3>
@@ -32,7 +40,7 @@ export default function Index() {
 					<SackLeaders></SackLeaders>
 					<InterceptionLeaders></InterceptionLeaders>
 				</section>
-			</div>
+			</section>
 		</main>
 	);
 }
