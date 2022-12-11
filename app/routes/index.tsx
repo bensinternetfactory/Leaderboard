@@ -1,4 +1,5 @@
 import PassingLeaders from "~/components/passingLeaders";
+import RushingLeaders from "~/components/rushingLeaders";
 
 export default function Index() {
 	return (
@@ -8,7 +9,7 @@ export default function Index() {
 					<h2>Offensive Leaders</h2>
 				</div>
 				<PassingLeaders></PassingLeaders>
-				<div>2</div>
+				<RushingLeaders></RushingLeaders>
 				<div>3</div>
 			</section>
 			<section id="defensive_leaders" className="flex flex-col gap-4 flex-1">

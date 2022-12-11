@@ -2,38 +2,38 @@ const players = [
 	{
 		id: "1",
 		rank: "1",
-		name: "Patrick Mahoomes",
-		yards: "3,808",
+		name: "Josh Jacobs",
+		yards: "1,402",
 	},
 	{
 		id: "2",
 		rank: "2",
-		name: "Joe Burrow",
-		yards: "3,446",
+		name: "Nick Chubb",
+		yards: "1,119",
 	},
 	{
 		id: "3",
 		rank: "3",
-		name: "Josh Alllen",
-		yards: "3,406",
+		name: "Derrick Henry",
+		yards: "1,078",
 	},
 	{
 		id: "4",
 		rank: "4",
-		name: "Justin Herbert",
-		yards: "3,339",
+		name: "Saquon Barkely",
+		yards: "1,055",
 	},
 	{
 		id: "5",
 		rank: "5",
-		name: "Tom Brady",
-		yards: "3,332",
+		name: "Dalvin Cook",
+		yards: "927",
 	},
 ];
 
-export default function PassingLeaders() {
+export default function RushingLeaders() {
 	return (
-		<section id="passing_leaders">
+		<section id="rushing_leaders">
 			<table className="w-full divide-y divide-gray-300">
 				<thead className="border-t border-gray-300">
 					<tr>
@@ -41,7 +41,7 @@ export default function PassingLeaders() {
 							RK
 						</th>
 						<th scope="col" className="text-left">
-							PASSING
+							RUSHING
 						</th>
 						<th scope="col" className="text-right">
 							YDS
