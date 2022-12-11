@@ -1,4 +1,5 @@
 import PassingLeaders from "~/components/passingLeaders";
+import ReceivingLeaders from "~/components/receivingLeaders";
 import RushingLeaders from "~/components/rushingLeaders";
 
 export default function Index() {
@@ -10,7 +11,7 @@ export default function Index() {
 				</div>
 				<PassingLeaders></PassingLeaders>
 				<RushingLeaders></RushingLeaders>
-				<div>3</div>
+				<ReceivingLeaders></ReceivingLeaders>
 			</section>
 			<section id="defensive_leaders" className="flex flex-col gap-4 flex-1">
 				<div className="mb-4">
