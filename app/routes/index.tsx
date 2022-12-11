@@ -1,30 +1,24 @@
+import PassingLeaders from "~/components/passingLeaders";
+
 export default function Index() {
 	return (
-		<div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-			<h1>Welcome to Remix</h1>
-			<ul>
-				<li>
-					<a
-						target="_blank"
-						href="https://remix.run/tutorials/blog"
-						rel="noreferrer">
-						15m Quickstart Blog Tutorial
-					</a>
-				</li>
-				<li>
-					<a
-						target="_blank"
-						href="https://remix.run/tutorials/jokes"
-						rel="noreferrer">
-						Deep Dive Jokes App Tutorial
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-						Remix Docs
-					</a>
-				</li>
-			</ul>
-		</div>
+		<main className="container mx-auto p-4 flex flex-row gap-4">
+			<section id="offensive_leaders" className="flex flex-col gap-4 flex-1">
+				<div className="mb-4">
+					<h2>Offensive Leaders</h2>
+				</div>
+				<PassingLeaders></PassingLeaders>
+				<div>2</div>
+				<div>3</div>
+			</section>
+			<section id="defensive_leaders" className="flex flex-col gap-4 flex-1">
+				<div className="mb-4">
+					<h2>Defensive Leaders</h2>
+				</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+			</section>
+		</main>
 	);
 }
