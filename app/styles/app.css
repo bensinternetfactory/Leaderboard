@@ -580,8 +580,8 @@ video {
   flex-grow: 1;
 }
 
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+.grid-flow-col {
+  grid-auto-flow: column;
 }
 
 .flex-col {
@@ -653,6 +653,11 @@ video {
   padding: 1rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -670,9 +675,14 @@ video {
   line-height: 2rem;
 }
 
-* {
-  outline: 1px solid limegreen;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
+
+/* * {
+	outline: 1px solid limegreen;
+} */
 
 .even\:bg-gray-100:nth-child(even) {
   --tw-bg-opacity: 1;
@@ -680,10 +690,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }

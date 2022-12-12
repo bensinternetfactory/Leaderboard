@@ -3,7 +3,7 @@ import SeasonSelectBox from "~/components/seasonSelectBox";
 export default function PlayerAdmin() {
 	return (
 		<main className="flex flex-col gap-4">
-			<header id="player_meta" className="bg-gray-400">
+			<header id="player_meta" className="bg-gray-400 py-8">
 				<div className="container mx-auto p-4 flex flex-col gap-4">
 					<div className="flex justify-between">
 						<div className="flex gap-4">
@@ -49,10 +49,15 @@ export default function PlayerAdmin() {
 					</div>
 				</div>
 			</header>
-			<section id="game_stats" className="grid grid-rows-3 gap-4">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
+			<section id="game_stats" className="container mx-auto p-4">
+				<div className="grid grid-row-3 grid-flow-col gap-4">
+					<div className="flex justify-between text-lg">
+						<span>Game 1</span>
+						<span>vs Exeter</span>
+					</div>
+					<div>2</div>
+					<div>3</div>
+				</div>
 			</section>
 		</main>
 	);
